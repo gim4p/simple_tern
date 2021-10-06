@@ -1,6 +1,6 @@
 
 
-%% in general I just copied Shepard ternery plot and only inserted lines and fraction 
+%% actually, I just copied Shepard ternery plot and only inserted lines and fraction 
 % borders for quickly plotting grabsamples data into Figge and Folkk ternplots
 % simply_figge_tern and simply_folk_tern are the two functions
 
