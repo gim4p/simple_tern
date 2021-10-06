@@ -1,3 +1,4 @@
+%20190704
 
 function simply_folk_tern(mud, sand, gravel, varargin)
 
