@@ -1,17 +1,12 @@
 
 
-%% in general I just copied Shepard's ternplots and only inserted lines and fraction 
+%% in general I just copied Shepard ternery plot and only inserted lines and fraction 
 % borders for quickly plotting grabsamples data into Figge and Folkk ternplots
 % simply_figge_tern and simply_folk_tern are the two functions
 
-%% Ternplot
+%% Ternplot (Shepard ternery plot)
 % Author: Carl Sandrock 20020827
-% Modifiers
-% CS Carl Sandrock
-% SA Shahab Afshari
-
-%% Shepard
-% Author: Carl Sandrock 20020827
+% Modifiers: CS Carl Sandrock and SA Shahab Afshari
 
 %%
 clear all; close all; clc;
