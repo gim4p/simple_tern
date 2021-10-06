@@ -6,7 +6,7 @@ layout_tern_folk
 
 %%
 frac_sand_mudsandsum = sand./(mud+sand);
-gravel = ((tand(60)*0.5)/1)*gravel;  % 1 is shorter because of equiangular triangle  
+gravel = (tand(60)*0.5)*gravel;  % 1 is shorter because of equiangular triangle  
 
 %% SYMS
 %{
@@ -25,7 +25,7 @@ for sample = 1 : length(gravel_percent_all)
 end
 %}
 
-%% no SYMS -> able to export  
+%% no SYMS -> runtime
 A_Y = 0; A_X = 0;
 B_Y = tand(60)/2; B_X = 0.5;
 
@@ -44,9 +44,6 @@ for pt_on_axis = 0 : .01 : axislgth % discretized
     dumpcount=dumpcount+1;
 end
 
-% figure; hold on
-% plot(point_on_axis_left(2,:),point_on_axis_left(1,:),'*')
-% plot(point_on_axis_right(2,:),point_on_axis_right(1,:),'*')
 
 for sample = 1 : length(gravel)
 
@@ -72,7 +69,6 @@ end
 
 vertexlabl('Sand', 'Gravel', 'Mud'); title('Folk Tern (1954, 1974)');
 
-
 function layout_tern_folk
 xoffset = 0.05;
 yoffset = 0.03;
@@ -81,9 +77,7 @@ cax = newplot; tc = get(cax,'xcolor');
 hoehe= tand(60)*laenge/2; %1;
 
 plot ([0 laenge laenge/2 0],[0 0 hoehe 0], 'LineWidth', 3, 'color', tc, 'linewidth',1, 'handlevisibility','off');	
-set(gca, 'visible', 'off');
-% patch('xdata', [0 laenge laenge/2 0], 'ydata', [0 0 hoehe 0], 'edgecolor',tc,'facecolor',get(gca,'color'),'handlevisibility','off'); % for multiple serial plots, pathes no good 
- 
+set(gca, 'visible', 'off'); 
 
 basis_angle_tern = atand(hoehe/(laenge/2)); % just makes sense for non equiangular triangles, which is not implemented  
 
