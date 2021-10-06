@@ -41,8 +41,6 @@ hoehe= tand(60)*laenge/2; %1;
 
 plot ([0 laenge laenge/2 0],[0 0 hoehe 0], 'Linewidth', 3, 'color', tc, 'linewidth',1, 'handlevisibility','off');	set(gca, 'visible', 'off');
 % patch('xdata', [0 laenge laenge/2 0], 'ydata', [0 0 hoehe 0], 'edgecolor',tc,'facecolor',get(gca,'color'),'handlevisibility','off'); % for multiple serial plots, pathes no good 
- 
-
 
 basis_angle_tern = atand(hoehe/(laenge/2)); % just makes sense for non equiangular triangles, which is not implemented  
 
@@ -120,9 +118,6 @@ y = fC*sin(radians(basis_angle_tern));
 x = 1 - fA - y*cot(radians(basis_angle_tern));
 
 function radians = radians(degrees)
-% RADIANS (DEGREES)
-% Conversion function from Radians to Degrees.
-% Richard Medlock 12-03-2002
 radians = ((2*pi)/360)*degrees;
 
 function h = vertexlabl(A, B, C, offset)
