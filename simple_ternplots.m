@@ -1,6 +1,8 @@
 
 
-%% der Figge Plot ist eigentlich 1 zu 1 nur Ternplot und Shepard, lediglich Linien integriert und für 1:1 Ratio von FOLK (1954) 
+%% in general I just copied Shepard's ternplots and only inserted lines and fraction 
+% borders for quickly plotting grabsamples data into Figge and Folkk ternplots
+% simply_figge_tern and simply_folk_tern are the two functions
 
 %% Ternplot
 % Author: Carl Sandrock 20020827
