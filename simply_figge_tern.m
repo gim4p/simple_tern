@@ -1,4 +1,4 @@
-%20190704
+%20190704quickplot
 
 function simply_figge_tern(A, B, C, varargin)
 
