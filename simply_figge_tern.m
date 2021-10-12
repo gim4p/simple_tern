@@ -1,15 +1,12 @@
 %20190704
 
-function simply_figge_tern(fsand, msand, gsand, varargin)
+function simply_figge_tern(A, B, C, varargin)
 
 %% triangle layout
 basis_angle_tern=layout_tern_figge;
 
 %% copy paste of Shepard
 % Done picking boundary points
-A = fsand;
-B = msand;
-C = gsand;
 xoffset = 0.04;
 yoffset = 0.02;
 majors = 4;
@@ -74,7 +71,7 @@ end
 wert1 = .1 / (1/.5);
 plot( [0.4, 0.4 + wert1 ] , [0, lya(1)], 'k', 'LineWidth', 1.5)
 
-%% field labels (Shepard copy)
+%% field labels (kind of Shepard copy)
 gS_loc = [.5 .65];
 gS_lab = text(gS_loc(1), gS_loc(2),'gS');
 set(gS_lab,'FontName','Times','FontSize',12,'HorizontalAlignment','center');
