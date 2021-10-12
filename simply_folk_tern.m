@@ -1,4 +1,4 @@
-%20190704
+%20190704quickplot
 
 function simply_folk_tern(mud, sand, gravel, varargin)
 
@@ -109,7 +109,7 @@ plot( [x_tic(2),x_tic(2)], [0, lya(3)], 'k', 'LineWidth', 1.5)
 wert2 = majorticks(3) / (1/(x_tic(3)-.5));
 plot( [x_tic(3),x_tic(3)-wert2], [0, lya(3)], 'k', 'LineWidth', 1.5)
 
-%% field labels (Shepard copy)
+%% field labels (kind of Shepard copy)
 G_loc = [.5 .75];
 G_lab = text(G_loc(1), G_loc(2),'G');
 set(G_lab,'FontName','Times','FontSize',12,'HorizontalAlignment','center');
